@@ -1,7 +1,6 @@
-
+package Composite;
 
 import java.util.Iterator;
-
 
 public class NullIterator implements Iterator {
 

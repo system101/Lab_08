@@ -1,5 +1,5 @@
+package Composite;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Sphere extends Prim {
@@ -14,10 +14,8 @@ public class Sphere extends Prim {
         System.out.println("Sphere R:" + radius);
     }
 
-    public ArrayList volume() {
-        ArrayList v = new ArrayList();
-        v.add((float) (4 / 3 * Math.PI * radius * radius * radius));
-        return v;
+    public float volume() {
+        return (float) (4 / 3 * Math.PI * radius * radius * radius);
     }
 
     public Iterator createIterator() {

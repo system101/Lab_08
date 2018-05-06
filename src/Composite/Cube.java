@@ -1,6 +1,5 @@
+package Composite;
 
-
-import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Cube extends Prim {
@@ -19,10 +18,8 @@ public class Cube extends Prim {
         System.out.println("Cube:" + height + ":" + width + ":" + length);
     }
 
-    public ArrayList volume() {
-        ArrayList v = new ArrayList();
-        v.add((float) (height * width * length));
-        return v;
+    public float volume() {
+        return (float) (height * width * length);
     }
 
     public Iterator createIterator() {
